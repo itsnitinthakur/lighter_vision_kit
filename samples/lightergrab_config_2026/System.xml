@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="ModbusTcp" memo="20" value="192.168.8.4" provisible="true" />
+<object type="cameralist" name="cameralist" provisible="true">
+	<object type="XVCamera" name="camera1" value="false" provisible="true">
+		<object name="LocalCamera" value="D:\picture2\透明A\手动保存" provisible="true" />
+		<object name="RemoteCamera" value="192.168.10.150" provisible="true" />
+		<object type="bool" name="reverseX" value="true" provisible="true" />
+		<object type="bool" name="reverseY" value="true" provisible="true" />
+		<object type="float" name="frameRate" value="30" provisible="true" />
+	</object>
+	<object type="XVCamera" name="camera2" value="false" provisible="true">
+		<object name="LocalCamera" value="D:/picture2/LeftLight" provisible="true" />
+		<object name="RemoteCamera" value="192.168.8.250" provisible="true" />
+		<object type="bool" name="reverseX" value="false" provisible="true" />
+		<object type="bool" name="reverseY" value="true" provisible="true" />
+		<object type="float" name="frameRate" value="30" provisible="true" />
+	</object>
+</object>

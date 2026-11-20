@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object type="int" name="exposureTime" value="50" provisible="true" dsec="曝光时间" />
+<object type="struct" name="learnIn" desc="图像轮廓学习输入" provisible="true">
+	<object type="int" name="learnSignal" desc="是否学习" value="1" provisible="true" />
+	<object type="int" name="isFineLearnSignal" desc="是否精定位学习" value="1" protype="int" provisible="true" />
+	<object type="int" name="coarsePatternPrecision" desc="粗定位模型精度" value="48" protype="int" provisible="true" promax="100" promin="0" />
+	<object type="int" name="finePatternPrecision" desc="精定位模型精度" value="30" protype="int" provisible="true" promax="100" promin="0" />
+	<object type="int" name="sampleRate" desc="采样系数" value="2" protype="int" provisible="true" promax="100" promin="0" />
+	<object type="int" name="pyramidNum" desc="采样层数" value="2" protype="int" provisible="true" attribute="enumNames=0:第一层,1:第二层,2:第三层;readonly=true" />
+	<object type="int" name="gradientThreshold" desc="对比度阈值" value="10" protype="int" provisible="true" promax="1000" promin="0" />
+	<object type="int" name="finePatternGradientThreshold" desc="精定位对比度阈值" value="10" protype="int" provisible="true" promax="1000" promin="0" />
+</object>
+<object type="struct" name="matchIn" desc="图像轮廓匹配输入" provisible="true">
+	<object type="int" name="gradientThreshold" desc="对比度阈值" value="10" protype="int" provisible="true" />
+	<object type="int" name="compariaonImage" desc="背景图像" value="0" protype="int" provisible="true" />
+	<object type="int" name="targetNum" desc="目标数" value="0" protype="int" provisible="true" />
+	<object type="int" name="similarityThreshold" desc="相似度阈值" value="75" protype="int" provisible="true" />
+	<object type="int" name="startAngle" desc="起始角度" value="-180" protype="int" provisible="true" />
+	<object type="int" name="endAngle" desc="终止角度" value="180" protype="int" provisible="true" />
+	<object type="int" name="overlapPara" desc="重叠系数" value="60" protype="int" provisible="true" />
+	<object type="int" name="isFineLocalization" desc="是否精定位" value="1" protype="bool" provisible="true" />
+	<object type="int" name="inTransformType" category="attribute" desc="变换类型" value="2" protype="int" provisible="true" />
+	<object type="int" name="finePatternGradientThreshold" desc="精定位对比度阈值" value="10" protype="int" provisible="true" />
+	<object type="int" name="attractionNum" desc="迭代次数" value="5" protype="int" provisible="true" />
+	<object type="int" name="fineSimilarityThreshold" desc="精定位相似度阈值" value="75" protype="int" provisible="true" />
+	<object type="int" name="testImgDipoleListSampleRate" desc="目标图像边缘采样率" value="1" protype="int" provisible="true" />
+	<object type="int" name="isDefectDetect" desc="是否缺陷检测" value="1" protype="bool" provisible="true" />
+	<object type="double" name="defectDetectPrecision" desc="检测精度" value="0.1" protype="double" provisible="true" />
+	<object type="int" name="maxDefectChainLength" desc="最大瑕疵链长" value="16" protype="int" provisible="true" />
+	<object type="int" name="useBackground" desc="使用背景" value="1" protype="bool" provisible="true" />
+	<object type="XVPoint2D" name="strechPoint" desc="抓取点" protype="XVPoint2D" provisible="true">
+		<object type="float" name="x" value="279" protype="float" provisible="true" />
+		<object type="float" name="y" value="344" protype="float" provisible="true" />
+	</object>
+	<object type="int" name="defectDetectLevel" desc="检测等级" value="0" protype="int" provisible="true" />
+</object>

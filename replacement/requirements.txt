@@ -1,0 +1,8 @@
+opencv-python>=4.8      # Apache 2.0
+numpy>=1.24             # BSD
+pymodbus>=3.6           # BSD  (only needed when --modbus is used)
+pytest>=7               # MIT  (tests only)
+# notebook demo only (lighter_inspection_demo.ipynb)
+jupyter          # BSD
+matplotlib       # PSF-based
+pandas           # BSD
